@@ -12,14 +12,14 @@ location as the Data folder(UCI HAR Dataset)
 # Steps:
 1. Download the dataset and unzip the files
     https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-3. The script requires the following libraries:
+2. The script requires the following libraries:
     data.table,
     dplyr,
     plyr
-4. The script loads the Test data combining with the Subjects and Activities using cbind.
-5. The script loads the Train data combining with the Subjects and Activities using cbind.
-6. Test and Train data is combined using rbind.
-7. The required columns are selected using 'select_vars' and loaded into completeData_mean_sd
-8. The column names are modified to be more descriptive
-9. The average of each variable for each activity and each subject is calculated using ddply.
-10. The average data is finally written to a file called UCIHAR_Average_TidyData.txt using write.table
+3. The script loads the Test data combining with the Subjects and Activities using cbind.
+4. The script loads the Train data combining with the Subjects and Activities using cbind.
+5. Test and Train data is combined using rbind.
+6. The required columns are selected using 'select_vars' and loaded into completeData_mean_sd
+7. The column names are modified to be more descriptive
+8. The average of each variable for each activity and each subject is calculated using ddply.
+9. The average data is finally written to a file called UCIHAR_Average_TidyData.txt using write.table
